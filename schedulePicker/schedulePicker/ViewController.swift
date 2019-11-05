@@ -78,12 +78,25 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func getSchedule(_ sender: Any) {
         let dayTypeRow = pickerView.selectedRow(inComponent: 0)
         let ACBDay = dayTypes[dayTypeRow]
+        let nameOfDay = weekdays[pickerView.selectedRow(inComponent:1)]
 
         let periodRotation:[String:[String]] = [
             "A":["A", "B", "D", "E", "G", "H"],
             "C":["C", "A", "F", "D", "I", "G"],
             "B":["B", "C", "E", "F", "H", "I"]
             ]
+        let MondayPeriod:[String:[String]] = [
+        "A":["A", "B", "D", "E", "Monday", "Monday"],
+        "C":["C", "A", "F", "D", "Monday", "Monday"],
+        "B":["B", "C", "E", "F", "Monday", "Monday"]
+        ]
+        if nameOfDay == "Monday"{
+            let mySched = getScheduleForDay(periods: MondayPeriod[ACBDay]!, mySchedule: mySchedule)
+            label.text = mySched
+        } else{
+            let mySched = getScheduleForDay(periods: periodRotation[ACBDay]!, mySchedule: mySchedule)
+            label.text = mySched
+        }
         let mySched = getScheduleForDay(periods: periodRotation[ACBDay]!, mySchedule: mySchedule)
         label.text = mySched
     }

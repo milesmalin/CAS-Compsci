@@ -52,8 +52,12 @@ let vocab:[String:String] = [
 "The Schedule":"A mysterious twisting and turning block schedule that confounds many to this day"
     ]
 
+    var vocabWords = [String]()
+
+    
 override func viewDidLoad() {
-super.viewDidLoad()
+    super.viewDidLoad()
+    vocabWords = Array(vocab.keys).sorted()
 
 // Uncomment the following line to preserve selection between presentations
 // self.clearsSelectionOnViewWillAppear = false
@@ -78,8 +82,7 @@ override func tableView(_ tableView: UITableView, numberOfRowsInSection section:
 
 override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-    let list = Array(vocab.keys)
-    let title = list[indexPath.row]
+    let title = vocabWords[indexPath.row]
     cell.textLabel!.text = title
 // Configure the cell...
 
@@ -122,14 +125,19 @@ return true
 }
 */
 
-/*
+
 // MARK: - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 // Get the new view controller using segue.destination.
+    let vc = segue.destination as! ViewController
 // Pass the selected object to the new view controller.
+    let indexPath = self.tableView.indexPathForSelectedRow
+    let word = self .vocabWords[indexPath!.row]
+    vc.vocabWord = word
+    vc.vocabDefinition = self.vocab[word]
 }
-*/
+
 
 }

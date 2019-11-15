@@ -23,7 +23,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         "D":"Spanish",
         "E":"Trig",
         "F":"US History",
-        "M 5/6":"Life Skills"
+        "G":"Free",
+        "H":"Free"
+    ]
+    let myMonSchedule:[String:String] = [
+    "A":"D and E",
+    "B":"Comp sci",
+    "C":"English",
+    "D":"Spanish",
+    "E":"Trig",
+    "F":"US History",
+    "G":"Life Skills",
+    "H":"Life Skills"
     ]
     
     @IBOutlet weak var pickerView: UIPickerView!
@@ -97,8 +108,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             let mySched = getScheduleForDay(periods: periodRotation[ACBDay]!, mySchedule: mySchedule)
             label.text = mySched
         }
-        let mySched = getScheduleForDay(periods: periodRotation[ACBDay]!, mySchedule: mySchedule)
-        label.text = mySched
+       
     }
     
     func getScheduleForDay(periods:[String], mySchedule:[String:String]) -> String{

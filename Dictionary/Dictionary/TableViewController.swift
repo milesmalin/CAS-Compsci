@@ -14,13 +14,17 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let note1 = Note()
-        note1.note = "Hello! This is a note to myself"
-        notes.append(note1)
+        let note = Note()
+        note.note = "Hello! This is a note to myself"
+        notes.append(note)
         
         let note2 = Note()
         note2.note = "This is another note to myself"
         notes.append(note2)
+        
+        let note3 = Note()
+        note3.note = "This is another another note to myself"
+        notes.append(note3)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -43,13 +47,23 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "noter", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "note", for: indexPath)
         
 
         // Configure the cell...
+        
+        let note = notes[indexPath.row]
+        cell.textLabel!.text = note.note
 
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:Any?) {
+        let dest = segue.destination as! ViewController
+        if let index = self.tableView.indexPathForSelectedRow{
+            let note = notes[index.row]
+            dest.note = note
+        }
     }
     
 

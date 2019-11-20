@@ -53,7 +53,8 @@ class TableViewController: UITableViewController {
         // Configure the cell...
         
         let note = notes[indexPath.row]
-        cell.textLabel!.text = note.note
+        cell.textLabel?.text = "\(note.date) - \(note.note)"
+
 
         return cell
     }
@@ -63,7 +64,15 @@ class TableViewController: UITableViewController {
         if let index = self.tableView.indexPathForSelectedRow{
             let note = notes[index.row]
             dest.note = note
+        } else{
+            let note = Note()
+            notes.append(note)
+            dest.note = note
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
     }
     
 

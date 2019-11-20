@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4pU-P4-cbL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ihD-d3-mDR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -33,7 +33,13 @@
                             <outlet property="delegate" destination="4pU-P4-cbL" id="FHp-pR-Dev"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FlY-Lg-mCp"/>
+                    <navigationItem key="navigationItem" id="FlY-Lg-mCp">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gfh-1F-cti">
+                            <connections>
+                                <segue destination="jyG-cs-PGZ" kind="show" id="13S-0y-EYy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTb-Vx-r1f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,4 +94,7 @@
             <point key="canvasLocation" x="31.884057971014496" y="106.47321428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gTh-dc-AkH"/>
+    </inferredMetricsTieBreakers>
 </document>

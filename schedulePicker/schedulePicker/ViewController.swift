@@ -24,8 +24,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         "E":"Trig",
         "F":"US History",
         "G":"Free",
-        "H":"Free"
+        "Monday":"Lifeskills"
     ]
+   /*
     let myMonSchedule:[String:String] = [
     "A":"D and E",
     "B":"Comp sci",
@@ -36,7 +37,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     "G":"Life Skills",
     "H":"Life Skills"
     ]
-    
+    */
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var label: UILabel!
     

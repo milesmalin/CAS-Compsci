@@ -9,57 +9,47 @@
 import UIKit
 
 class ViewControllerStarWars: UIViewController {
+    
     var newMovie: Int?
     
     var planets: [String]?
     
+    
+    
     @IBOutlet weak var nameLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("new movie is: \(newMovie)")
-        // Do any additional setup after loading the view.
-        //for i in 1...planets!.count{
-        //let planet = planets![i]
-        //  let url: URL = URL(string: "\(planet)")
-        //let url = "https://swapi.co/api/\(newMovie ?? 0)/"
-        let url: URL = URL(string: "https://swapi.co/api/films/\(newMovie ?? 0)/")!
-        //let planet = URLComponents(string: url)?.queryItems
-        //let param1 = planet?.filter({$0.name == "param1"}).first
-        let responseData: Data? = try? Data(contentsOf: url)
-        if let responseData = responseData {
-            let json: Any? = try? JSONSerialization.jsonObject(with: responseData, options: [])
-            if let json = json {
-                print(json)
-
-                let dictionary: [String: Any]? = json as? [String: Any]
-                if let dictionary = dictionary {
-                    let title: String? = dictionary["title"] as? String
-                    let planet: String? = dictionary["planets"] as? String
-                    let species: String? = dictionary["species"] as? String
-                    if let title2:String = title,
-                        let planet2:String = planet,
-                        let species2:String = species {
-                        nameLabel.text = "The Star wars film \(title2), has the planets \(planet2) in it and has these charcters \(species2)."
+    
+   
+            
+            
+            
+            override func viewDidLoad() {
+                super.viewDidLoad()
+                
+                
+                let url: URL = URL(string: "https://swapi.co/api/films/\((newMovie!) + 1)")!
+                let responseData: Data? = try? Data(contentsOf: url)
+                if let responseData = responseData {
+                    let json: Any? = try? JSONSerialization.jsonObject(with: responseData, options: [])
+                    if let json = json {
+                        let dictionary: [String: Any]? = json as? [String: Any]
+                        if let dictionary = dictionary {
+                            let title: String? = dictionary["title"] as? String
+                            let director: String? = dictionary["director"] as? String
+                            let release_date: String? = dictionary["release_date"] as? String
+                            if let title2:String = title,
+                                let director2:String = director,
+                                let release_date2:String = release_date {
+                                nameLabel.text = "This film \(title2), was directed by \(director2) and came out on \(release_date2)."
+                            }
+                            
+                        }
+                        
                     }
                     
-                }else { print("response data failed 3")}
-                
-            }else { print("response data failed 2")}
-            
-        } else { print("response data failed")}
+                }
     }
 }
 
 
-
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
- */
 

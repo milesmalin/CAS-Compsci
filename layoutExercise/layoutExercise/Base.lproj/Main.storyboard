@@ -98,16 +98,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-01-13 at 12.07.38 PM" translatesAutoresizingMaskIntoConstraints="NO" id="eBG-pq-5FM">
+                                <rect key="frame" x="0.0" y="50" width="810" height="515"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-01-13 at 12.07.38 PM" translatesAutoresizingMaskIntoConstraints="NO" id="ltS-6s-9it">
-                                <rect key="frame" x="0.0" y="50" width="810" height="1030"/>
+                                <rect key="frame" x="0.0" y="565" width="810" height="515"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ani-Qc-yoX" firstAttribute="trailing" secondItem="ltS-6s-9it" secondAttribute="trailing" id="TpM-Xm-y02"/>
-                            <constraint firstItem="ani-Qc-yoX" firstAttribute="bottom" secondItem="ltS-6s-9it" secondAttribute="bottom" id="nO5-ha-ozk"/>
-                            <constraint firstItem="ltS-6s-9it" firstAttribute="top" secondItem="ani-Qc-yoX" secondAttribute="top" id="omQ-Ck-9t4"/>
-                            <constraint firstItem="ltS-6s-9it" firstAttribute="leading" secondItem="ani-Qc-yoX" secondAttribute="leading" id="wjt-Ef-Km5"/>
+                            <constraint firstItem="ltS-6s-9it" firstAttribute="height" secondItem="eBG-pq-5FM" secondAttribute="height" id="7pM-xd-mwI"/>
+                            <constraint firstItem="ltS-6s-9it" firstAttribute="leading" secondItem="ani-Qc-yoX" secondAttribute="leading" id="B8F-XS-nZw"/>
+                            <constraint firstItem="eBG-pq-5FM" firstAttribute="top" secondItem="ani-Qc-yoX" secondAttribute="top" id="NxR-Km-ezF"/>
+                            <constraint firstItem="ltS-6s-9it" firstAttribute="width" secondItem="eBG-pq-5FM" secondAttribute="width" id="TPk-4h-Mft"/>
+                            <constraint firstItem="ani-Qc-yoX" firstAttribute="trailing" secondItem="ltS-6s-9it" secondAttribute="trailing" id="VDg-XI-Tc4"/>
+                            <constraint firstItem="eBG-pq-5FM" firstAttribute="leading" secondItem="ani-Qc-yoX" secondAttribute="leading" id="Xoh-dd-kLo"/>
+                            <constraint firstItem="ltS-6s-9it" firstAttribute="top" secondItem="eBG-pq-5FM" secondAttribute="bottom" id="fpo-lK-C3R"/>
+                            <constraint firstItem="ani-Qc-yoX" firstAttribute="trailing" secondItem="eBG-pq-5FM" secondAttribute="trailing" id="iOr-Br-nU3"/>
+                            <constraint firstItem="ani-Qc-yoX" firstAttribute="bottom" secondItem="ltS-6s-9it" secondAttribute="bottom" id="xAe-w0-W9b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ani-Qc-yoX"/>
                     </view>

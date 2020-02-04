@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Akd-GE-XBY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HardCoding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cj3-eK-eeJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="258"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Charmander">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f2y-rG-9v3" kind="show" id="NaC-tk-iOL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Oj-85-AJ0">
+                                <rect key="frame" x="0.0" y="604" width="414" height="258"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Bulbasaur">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f2y-rG-9v3" kind="show" id="QMT-16-T5b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbd-sa-SKh">
+                                <rect key="frame" x="0.0" y="346" width="414" height="258"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Squirtle">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f2y-rG-9v3" kind="show" id="Hoo-zP-mIc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cj3-eK-eeJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1Hr-7t-RCK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cj3-eK-eeJ" secondAttribute="trailing" id="1eK-6t-19m"/>
+                            <constraint firstItem="1Oj-85-AJ0" firstAttribute="top" secondItem="mbd-sa-SKh" secondAttribute="bottom" id="4cV-gR-KYB"/>
+                            <constraint firstItem="1Oj-85-AJ0" firstAttribute="width" secondItem="Cj3-eK-eeJ" secondAttribute="width" id="AYR-1d-Bnq"/>
+                            <constraint firstItem="1Oj-85-AJ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BTk-t0-B2x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Oj-85-AJ0" secondAttribute="trailing" id="C6e-xK-BVO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Oj-85-AJ0" secondAttribute="bottom" id="QBZ-z5-3ms"/>
+                            <constraint firstItem="Cj3-eK-eeJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SbT-2Z-2Dj"/>
+                            <constraint firstItem="mbd-sa-SKh" firstAttribute="height" secondItem="Cj3-eK-eeJ" secondAttribute="height" id="a0p-JS-tIE"/>
+                            <constraint firstItem="1Oj-85-AJ0" firstAttribute="height" secondItem="Cj3-eK-eeJ" secondAttribute="height" id="caL-Wb-1Lc"/>
+                            <constraint firstItem="mbd-sa-SKh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ePo-Ox-mzr"/>
+                            <constraint firstItem="mbd-sa-SKh" firstAttribute="width" secondItem="Cj3-eK-eeJ" secondAttribute="width" id="n7W-mV-ysu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mbd-sa-SKh" secondAttribute="trailing" id="smU-15-51g"/>
+                            <constraint firstItem="mbd-sa-SKh" firstAttribute="top" secondItem="Cj3-eK-eeJ" secondAttribute="bottom" id="zhZ-Kx-EhD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="phQ-vn-E7w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.17391304347836" y="101.78571428571428"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="J9z-Mo-JSD">
+            <objects>
+                <viewController id="f2y-rG-9v3" customClass="DetailsViewController" customModule="HardCoding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X6m-my-Ocf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Charmander is the fire type starter pokemon" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="CB0-iC-wx2">
+                                <rect key="frame" x="20" y="130" width="374" height="740"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ifp-eQ-XeO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZqT-Qn-VjB"/>
+                    <connections>
+                        <outlet property="detailsTextView" destination="CB0-iC-wx2" id="y1b-rj-aSY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKC-tS-0S1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1536.2318840579712" y="101.78571428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Zy-op-h1z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Akd-GE-XBY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="71x-SV-tKk">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LbR-gD-ftD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4IL-Px-noq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QMT-16-T5b"/>
+    </inferredMetricsTieBreakers>
+</document>

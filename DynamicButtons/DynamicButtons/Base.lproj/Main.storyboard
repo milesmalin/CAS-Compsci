@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vUw-tE-sYt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicButtons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JkP-ur-PwT">
+                                <rect key="frame" x="0.0" y="475" width="414" height="387"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntw-xA-Og1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="387"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Adventure"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ntw-xA-Og1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Au-Tu-2df"/>
+                            <constraint firstItem="JkP-ur-PwT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7kJ-wq-tbM"/>
+                            <constraint firstItem="ntw-xA-Og1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BfG-n3-Y9Z"/>
+                            <constraint firstItem="JkP-ur-PwT" firstAttribute="width" secondItem="ntw-xA-Og1" secondAttribute="width" id="L95-3t-ayp"/>
+                            <constraint firstItem="JkP-ur-PwT" firstAttribute="height" secondItem="ntw-xA-Og1" secondAttribute="height" id="PEE-fd-ulN"/>
+                            <constraint firstItem="JkP-ur-PwT" firstAttribute="top" secondItem="ntw-xA-Og1" secondAttribute="bottom" id="VQ1-4o-16c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JkP-ur-PwT" secondAttribute="trailing" id="bsQ-dL-OkU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JkP-ur-PwT" secondAttribute="bottom" id="tfA-FZ-pWg"/>
+                            <constraint firstItem="ntw-xA-Og1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ycE-Wp-UfR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8yO-Bg-i7x"/>
+                    <connections>
+                        <outlet property="adventureButton" destination="ntw-xA-Og1" id="0kh-ki-y6j"/>
+                        <outlet property="stackView" destination="JkP-ur-PwT" id="7aq-Li-cfy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Idz-As-lye">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vUw-tE-sYt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5yf-mC-OQb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pax-CF-SjV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zmt-ej-Olp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+</document>

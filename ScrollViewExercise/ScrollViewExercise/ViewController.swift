@@ -17,11 +17,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        for i in 1...125 {
-            let newLabel = UILabel()
-            newLabel.text = "Label \(i)"
-            newLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
-            stackView.addArrangedSubview(newLabel)
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if(segue.identifier == "easy") {
+                
+            }
+            
+
+    }
+}
+  /*      for i in 1...125 {
+            let newButon = UIButton()
+            newButton.setTitle("x", .normal)
+            newButton.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
+            stackView.addArrangedSubview(newButton)
         }
         stackView.frame = CGRect(x: 0, y: 0, width: 200, height: 3750)
         scrollView.contentSize = CGSize(width: 200, height: 3750)
@@ -29,4 +37,4 @@ class ViewController: UIViewController {
 
 
 }
-
+ */

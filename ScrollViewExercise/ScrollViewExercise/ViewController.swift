@@ -9,32 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-   
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var stackView: UIStackView!
+    
+    var numberButton: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if(segue.identifier == "easy") {
-                
-            }
-            
-
     }
-}
-  /*      for i in 1...125 {
-            let newButon = UIButton()
-            newButton.setTitle("x", .normal)
-            newButton.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
-            stackView.addArrangedSubview(newButton)
-        }
-        stackView.frame = CGRect(x: 0, y: 0, width: 200, height: 3750)
-        scrollView.contentSize = CGSize(width: 200, height: 3750)
+    
+    @IBAction func easyButton(_ sender: Any) {
+        return numberButton = 10
     }
-
-
+    
+    @IBAction func mediumButton(_ sender: Any) {
+        return numberButton = 50
+    }
+    
+    @IBAction func hardButton(_ sender: Any) {
+        return numberButton = 150
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? GameViewController
+        vc?.number = numberButton
+    }
+    
+    
 }
- */

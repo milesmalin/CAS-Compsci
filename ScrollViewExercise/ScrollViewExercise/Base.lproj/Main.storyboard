@@ -55,6 +55,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Easy"/>
                                 <connections>
+                                    <action selector="easyButton:" destination="6Zf-sw-7eP" eventType="touchUpInside" id="2no-hk-SD7"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="easy" id="a12-fy-lPD"/>
                                 </connections>
                             </button>
@@ -64,6 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Medium"/>
                                 <connections>
+                                    <action selector="mediumButton:" destination="6Zf-sw-7eP" eventType="touchUpInside" id="z6t-E6-CN9"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="medium" id="RbA-hf-HUs"/>
                                 </connections>
                             </button>
@@ -73,6 +75,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Hard"/>
                                 <connections>
+                                    <action selector="hardButton:" destination="6Zf-sw-7eP" eventType="touchUpInside" id="Xm5-t6-qSk"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="hard" id="J6n-S8-Orq"/>
                                 </connections>
                             </button>

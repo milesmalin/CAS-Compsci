@@ -52,7 +52,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
         takerController.dismiss(animated: true, completion: nil)
-        imageButton(image: info[.originalImage] as! UIImage)
+       // imageButton(image: info[.originalImage] as! UIImage)
         let pic = info[.originalImage] as? UIImage
         imageButton(image: pic!)
         

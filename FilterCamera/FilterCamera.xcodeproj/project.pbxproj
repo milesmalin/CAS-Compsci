@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EBB64FFA2412B85000A2EF49 /* BigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB64FF92412B85000A2EF49 /* BigViewController.swift */; };
-		EBCA218924082B80002A978A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA218824082B80002A978A /* AppDelegate.swift */; };
-		EBCA218B24082B80002A978A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA218A24082B80002A978A /* SceneDelegate.swift */; };
-		EBCA218D24082B80002A978A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCA218C24082B80002A978A /* ViewController.swift */; };
-		EBCA219024082B80002A978A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCA218E24082B80002A978A /* Main.storyboard */; };
-		EBCA219224082B84002A978A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCA219124082B84002A978A /* Assets.xcassets */; };
-		EBCA219524082B84002A978A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCA219324082B84002A978A /* LaunchScreen.storyboard */; };
+		EBB64FE624101F3300A2EF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB64FE524101F3300A2EF49 /* AppDelegate.swift */; };
+		EBB64FE824101F3300A2EF49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB64FE724101F3300A2EF49 /* SceneDelegate.swift */; };
+		EBB64FEA24101F3300A2EF49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB64FE924101F3300A2EF49 /* ViewController.swift */; };
+		EBB64FED24101F3300A2EF49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB64FEB24101F3300A2EF49 /* Main.storyboard */; };
+		EBB64FEF24101F3500A2EF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB64FEE24101F3500A2EF49 /* Assets.xcassets */; };
+		EBB64FF224101F3500A2EF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB64FF024101F3500A2EF49 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EBB64FF92412B85000A2EF49 /* BigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigViewController.swift; sourceTree = "<group>"; };
-		EBCA218524082B80002A978A /* PhotoTakerV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTakerV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBCA218824082B80002A978A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EBCA218A24082B80002A978A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBCA218C24082B80002A978A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBCA218F24082B80002A978A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EBCA219124082B84002A978A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EBCA219424082B84002A978A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EBCA219624082B84002A978A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB64FE224101F3300A2EF49 /* FilterCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB64FE524101F3300A2EF49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBB64FE724101F3300A2EF49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBB64FE924101F3300A2EF49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBB64FEC24101F3300A2EF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBB64FEE24101F3500A2EF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBB64FF124101F3500A2EF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBB64FF324101F3500A2EF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EBCA218224082B80002A978A /* Frameworks */ = {
+		EBB64FDF24101F3200A2EF49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EBCA217C24082B80002A978A = {
+		EBB64FD924101F3200A2EF49 = {
 			isa = PBXGroup;
 			children = (
-				EBCA218724082B80002A978A /* PhotoTakerV2 */,
-				EBCA218624082B80002A978A /* Products */,
+				EBB64FE424101F3300A2EF49 /* FilterCamera */,
+				EBB64FE324101F3300A2EF49 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EBCA218624082B80002A978A /* Products */ = {
+		EBB64FE324101F3300A2EF49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBCA218524082B80002A978A /* PhotoTakerV2.app */,
+				EBB64FE224101F3300A2EF49 /* FilterCamera.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EBCA218724082B80002A978A /* PhotoTakerV2 */ = {
+		EBB64FE424101F3300A2EF49 /* FilterCamera */ = {
 			isa = PBXGroup;
 			children = (
-				EBCA218824082B80002A978A /* AppDelegate.swift */,
-				EBCA218A24082B80002A978A /* SceneDelegate.swift */,
-				EBCA218C24082B80002A978A /* ViewController.swift */,
-				EBCA218E24082B80002A978A /* Main.storyboard */,
-				EBB64FF92412B85000A2EF49 /* BigViewController.swift */,
-				EBCA219124082B84002A978A /* Assets.xcassets */,
-				EBCA219324082B84002A978A /* LaunchScreen.storyboard */,
-				EBCA219624082B84002A978A /* Info.plist */,
+				EBB64FE524101F3300A2EF49 /* AppDelegate.swift */,
+				EBB64FE724101F3300A2EF49 /* SceneDelegate.swift */,
+				EBB64FE924101F3300A2EF49 /* ViewController.swift */,
+				EBB64FEB24101F3300A2EF49 /* Main.storyboard */,
+				EBB64FEE24101F3500A2EF49 /* Assets.xcassets */,
+				EBB64FF024101F3500A2EF49 /* LaunchScreen.storyboard */,
+				EBB64FF324101F3500A2EF49 /* Info.plist */,
 			);
-			path = PhotoTakerV2;
+			path = FilterCamera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EBCA218424082B80002A978A /* PhotoTakerV2 */ = {
+		EBB64FE124101F3200A2EF49 /* FilterCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBCA219924082B84002A978A /* Build configuration list for PBXNativeTarget "PhotoTakerV2" */;
+			buildConfigurationList = EBB64FF624101F3500A2EF49 /* Build configuration list for PBXNativeTarget "FilterCamera" */;
 			buildPhases = (
-				EBCA218124082B80002A978A /* Sources */,
-				EBCA218224082B80002A978A /* Frameworks */,
-				EBCA218324082B80002A978A /* Resources */,
+				EBB64FDE24101F3200A2EF49 /* Sources */,
+				EBB64FDF24101F3200A2EF49 /* Frameworks */,
+				EBB64FE024101F3200A2EF49 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PhotoTakerV2;
-			productName = PhotoTakerV2;
-			productReference = EBCA218524082B80002A978A /* PhotoTakerV2.app */;
+			name = FilterCamera;
+			productName = FilterCamera;
+			productReference = EBB64FE224101F3300A2EF49 /* FilterCamera.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EBCA217D24082B80002A978A /* Project object */ = {
+		EBB64FDA24101F3200A2EF49 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Miles Malin";
 				TargetAttributes = {
-					EBCA218424082B80002A978A = {
+					EBB64FE124101F3200A2EF49 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = EBCA218024082B80002A978A /* Build configuration list for PBXProject "PhotoTakerV2" */;
+			buildConfigurationList = EBB64FDD24101F3200A2EF49 /* Build configuration list for PBXProject "FilterCamera" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = EBCA217C24082B80002A978A;
-			productRefGroup = EBCA218624082B80002A978A /* Products */;
+			mainGroup = EBB64FD924101F3200A2EF49;
+			productRefGroup = EBB64FE324101F3300A2EF49 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EBCA218424082B80002A978A /* PhotoTakerV2 */,
+				EBB64FE124101F3200A2EF49 /* FilterCamera */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EBCA218324082B80002A978A /* Resources */ = {
+		EBB64FE024101F3200A2EF49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBCA219524082B84002A978A /* LaunchScreen.storyboard in Resources */,
-				EBCA219224082B84002A978A /* Assets.xcassets in Resources */,
-				EBCA219024082B80002A978A /* Main.storyboard in Resources */,
+				EBB64FF224101F3500A2EF49 /* LaunchScreen.storyboard in Resources */,
+				EBB64FEF24101F3500A2EF49 /* Assets.xcassets in Resources */,
+				EBB64FED24101F3300A2EF49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EBCA218124082B80002A978A /* Sources */ = {
+		EBB64FDE24101F3200A2EF49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBCA218D24082B80002A978A /* ViewController.swift in Sources */,
-				EBCA218924082B80002A978A /* AppDelegate.swift in Sources */,
-				EBCA218B24082B80002A978A /* SceneDelegate.swift in Sources */,
-				EBB64FFA2412B85000A2EF49 /* BigViewController.swift in Sources */,
+				EBB64FEA24101F3300A2EF49 /* ViewController.swift in Sources */,
+				EBB64FE624101F3300A2EF49 /* AppDelegate.swift in Sources */,
+				EBB64FE824101F3300A2EF49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EBCA218E24082B80002A978A /* Main.storyboard */ = {
+		EBB64FEB24101F3300A2EF49 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EBCA218F24082B80002A978A /* Base */,
+				EBB64FEC24101F3300A2EF49 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EBCA219324082B84002A978A /* LaunchScreen.storyboard */ = {
+		EBB64FF024101F3500A2EF49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EBCA219424082B84002A978A /* Base */,
+				EBB64FF124101F3500A2EF49 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EBCA219724082B84002A978A /* Debug */ = {
+		EBB64FF424101F3500A2EF49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		EBCA219824082B84002A978A /* Release */ = {
+		EBB64FF524101F3500A2EF49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,36 +280,36 @@
 			};
 			name = Release;
 		};
-		EBCA219A24082B84002A978A /* Debug */ = {
+		EBB64FF724101F3500A2EF49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 245WQ2G945;
-				INFOPLIST_FILE = PhotoTakerV2/Info.plist;
+				INFOPLIST_FILE = FilterCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.milesmalin.PhotoTakerV2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milesmalin.FilterCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		EBCA219B24082B84002A978A /* Release */ = {
+		EBB64FF824101F3500A2EF49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 245WQ2G945;
-				INFOPLIST_FILE = PhotoTakerV2/Info.plist;
+				INFOPLIST_FILE = FilterCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.milesmalin.PhotoTakerV2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.milesmalin.FilterCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EBCA218024082B80002A978A /* Build configuration list for PBXProject "PhotoTakerV2" */ = {
+		EBB64FDD24101F3200A2EF49 /* Build configuration list for PBXProject "FilterCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBCA219724082B84002A978A /* Debug */,
-				EBCA219824082B84002A978A /* Release */,
+				EBB64FF424101F3500A2EF49 /* Debug */,
+				EBB64FF524101F3500A2EF49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBCA219924082B84002A978A /* Build configuration list for PBXNativeTarget "PhotoTakerV2" */ = {
+		EBB64FF624101F3500A2EF49 /* Build configuration list for PBXNativeTarget "FilterCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBCA219A24082B84002A978A /* Debug */,
-				EBCA219B24082B84002A978A /* Release */,
+				EBB64FF724101F3500A2EF49 /* Debug */,
+				EBB64FF824101F3500A2EF49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EBCA217D24082B80002A978A /* Project object */;
+	rootObject = EBB64FDA24101F3200A2EF49 /* Project object */;
 }

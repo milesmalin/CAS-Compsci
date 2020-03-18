@@ -1,0 +1,18 @@
+Statement:
+This app is an SOS button that calls a fully suited up hazmat unit to your location. if you wake up and feel sick in the morning press the button and a unit will come to you and take you to a hospital without you infecting anyone.
+
+List of features:
+1. SOS Button
+2. The hazmat unit comes to you
+3. Time until someone arrives
+4. A countdown so you don't accidently press the button
+5. A warning prompt lerting the person know that this is not a joke and punishment will come if they press the button as a joke.
+6. You can send messages to the team that is coming to get you so they k ow where you are
+7. A map to track the unit on their way
+8. A symptoms list at the start to make sure you can know if their is a chance you have coronavirus
+9. Cancel the SOS
+10. A siren goes off when hitting the button to let you know you have pressed it
+
+Challenges:
+I don't think it would be that hard for a technical engineer to buil it would be talking with hospitals and hazmat units or EMTs that would be harder. They would need to put a tracker in their squad car.
+But once they agree to this then I think this app would be very plausible for someone to make.

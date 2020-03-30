@@ -62,12 +62,21 @@
                                     <action selector="findLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xx4-eH-KiT"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DC5-h6-NUR">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DC5-h6-NUR">
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Ru2-So-6L6"/>
+                                    <constraint firstAttribute="height" constant="852" id="yHL-h2-3yg"/>
+                                </constraints>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DC5-h6-NUR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="11Y-X7-61J"/>
+                            <constraint firstAttribute="bottom" secondItem="DC5-h6-NUR" secondAttribute="bottom" id="3oL-lU-nAP"/>
+                            <constraint firstItem="DC5-h6-NUR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="afV-SG-Qpy"/>
+                            <constraint firstItem="DC5-h6-NUR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="akS-rG-Gyh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

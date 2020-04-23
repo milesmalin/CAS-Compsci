@@ -113,6 +113,8 @@ class GameScene: SKScene {
         
         let newColor = CGFloat(red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
         return newColor
+        
+        //I can't get the code to work here it keeps swithcing the error message no matter what I do.
     
     }
     

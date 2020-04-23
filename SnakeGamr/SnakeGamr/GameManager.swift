@@ -37,8 +37,8 @@ class GameManager{
     
     private func checkForScore() {
         if scene.scorePos != nil {
-            var x = scene.playerPositions[0].0
-            var y = scene.playerPositions[0].1
+            let x = scene.playerPositions[0].0
+            let y = scene.playerPositions[0].1
             if Int((scene.scorePos?.x)!) == y && Int((scene.scorePos?.y)!) == x {
                 currentScore += 1
                 scene.currentScore.text = "Score: \(currentScore)"

@@ -112,10 +112,10 @@ class GameManager{
                 scene.playerPositions.removeAll()
                 renderChange()
                 //return to menu
-                scene.currentScore.run(SKAction.scale(to: 0, duration: 0.4) {
+                scene.currentScore.run(SKAction.scale(to: 0, duration: 0.4)) {
                     self.scene.currentScore.isHidden = true
-                    },
-                                       scene.gameBG.run(SKAction.scale(to: 0, duration: 0.4)) {
+                    }
+                scene.gameBG.run(SKAction.scale(to: 0, duration: 0.4)); do {
                                         self.scene.gameBG.isHidden = true
                                         self.scene.gameLogo.isHidden = false
                                         self.scene.gameLogo.run(SKAction.move(to: CGPoint(x: 0, y: (self.scene.frame.size.height / 2) - 200), duration: 0.5)) {
@@ -223,3 +223,4 @@ class GameManager{
     }
     
 }
+

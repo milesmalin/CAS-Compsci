@@ -106,6 +106,17 @@ class GameScene: SKScene {
         }
     }
     
+    func colorChange() -> SKColor {
+        let greenValue = SKColor.green
+        let blueValue = SKColor.blue
+        let redValue = SKColor.red
+        
+        let newColor = CGFloat(red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
+        return newColor
+        
+        //I can't get the code to work here it keeps swithcing the error message no matter what I do.
+    
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in touches {
@@ -129,7 +140,6 @@ class GameScene: SKScene {
             self.playButton.isHidden = true
         }
         let bottomCorner = CGPoint(x: 0, y: (frame.size.height / -2) + 20)
-        //bestScore.run(SKAction.move(to: bottomCorner, duration: 0.4))
         
         bestScore.run(SKAction.move(to: bottomCorner, duration: 0.4)) {
             self.gameBG.setScale(0)
@@ -142,6 +152,8 @@ class GameScene: SKScene {
         }
         
     }
+    
+
     
     private func initializeMenu(){
         gameLogo = SKLabelNode(fontNamed: "ArialRoundedMTBold")
